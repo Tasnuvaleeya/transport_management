@@ -1,0 +1,10 @@
+.idea
+migrations
+lib
+bin
+include
+settings/production.py
+settings/base.py
+__pycache__
+*.pyc
+db.sqlite3

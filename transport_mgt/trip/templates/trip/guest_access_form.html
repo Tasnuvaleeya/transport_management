@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block guest_form %}
+<div class="container">
+<div class="row">
+    <div class="col-sm-6">
+        <h1> Access As Guest!</h1>
+        <form method="POST" action="">{% csrf_token %}
+            {{ form_guest|crispy }}
+        <input type="submit" class="btn btn-primary" value="Access as Guest"/>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}
