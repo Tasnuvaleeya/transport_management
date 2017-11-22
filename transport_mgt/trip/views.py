@@ -20,7 +20,7 @@ def signin_view(request):
     return render(request,'trip/signin_form.html',context)
 
 def guest_access_view(request):
-    form_guest= GuestAccessForm()
+    form_guest = GuestAccessForm()
     context = {
         "form_guest": form_guest
     }
