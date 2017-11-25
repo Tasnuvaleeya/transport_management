@@ -14,7 +14,8 @@
         <div class="row">
             <div class="col-sm-4 col-sm-offset-3">
                 <h1>Trip Request Form</h1>
-                <form method="POST" action="">{% csrf_token %}
+{#                <p> New User? Please click  <a href="{% url 'trip:signup-view' %}">SignUP</a> to sign up</p>#}
+                <form action="">{% csrf_token %}
                     <input name="signup" type="submit" class="btn btn-info" value="SignUP" formaction="{% url 'trip:signup-view' %}"/>
                     <input name="signin" type="submit" class="btn btn-info" value="Sign In" formaction="{% url 'trip:signin-view' %}"/>
                    <input name="guest" type="submit" class="btn btn-info" value="Guest Access" formaction="{% url 'trip:guest-view' %}"/>

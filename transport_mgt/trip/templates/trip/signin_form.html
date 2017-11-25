@@ -7,7 +7,7 @@
             <h1>Please Sign In</h1>
             <form method="POST" action="">{% csrf_token %}
             {{ form_signin|crispy }}
-                <input type="submit" class="btn btn-primary" value="Sign In"/>
+                <input type="submit" class="btn btn-primary" value="Sign In" formaction="{% url 'trip:list-view' %}"/>
             </form>
         </div>
     </div>

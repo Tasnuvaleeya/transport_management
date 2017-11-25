@@ -17,3 +17,4 @@ class SignUp(models.Model):
 
     def __str__(self):
         return str(self.first_name)
+
